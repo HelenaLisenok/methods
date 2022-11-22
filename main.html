@@ -64,7 +64,201 @@
             Filter 200(1) Дан массив с числами. Оставьте в нем только положительные числа.
         </p>
         <button onclick="checkResult6()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Filter 200(5) Дан массив с числами. 
+            Оставьте в нем только те числа, произведение которых на их порядковый номер меньше 30.
+        </p>
+        <button onclick="checkResult7()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Filter 200(6) Дан массив, в нем могут быть обычные элементы и 
+            подмассивы, например [1, 2, [3, 4], 5, [6, 7]]. Оставьте в нем только
+            обычные элементы.
+        </p>
+        <button onclick="checkResult8()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Filter 200(7) Дан массив с числами. Посчитайте количество 
+            отрицательных чисел в этом массиве.
+        </p>
+        <button onclick="checkResult9()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Every 201(2) Дан массив с числами. Проверьте то, что для всех 
+            элементов произведение их значений на их порядковый номер меньше 30.
+        </p>
+        <button onclick="checkResult10()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Some 202(2) Дан массив с числами. Проверьте то, 
+            что хотя бы для одного элемента произведение его значения на порядковый номер больше
+            30.
+        </p>
+        <button onclick="checkResult11()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Spresd 203(1) Дан массив:
+            
+            let arr = [1, 2, 3, 4, 5];
+            Дана также функция:
+            
+            function func(num1, num2, num3, num4, num5) {
+            return num1 + num2 + num3 + num4 + num5;
+            }
+            Найдите с помощью приведенной функции сумму элементов массива.
+        </p>
+        <button onclick="checkResult12()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Spread 203(3) Дан массив с числами. Используя Math.min и 
+            spread выведите на экран минимальное значение массива.
+        </p>
+        <button onclick="checkResult13()">Проверить</button>
+    </li>
+    <li>
+        <p>
+    Rest 207(1)Напишите функцию, которая будет принимать параметрами 
+    произвольное количество чисел и возвращать их среднее
+    арифметическое.
+        </p>
+        <button onclick="checkResult14()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Деструктуризация 208(1) В следующем коде части массива записываются в 
+            соответствующие переменные:
+            
+            let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+            
+            let name = arr[0];
+            let surname = arr[1];
+            let department = arr[2];
+            let position = arr[3];
+            let salary = arr[4];
+            Переделайте этот код через деструктуризацию согласно изученной теории.
+        </p>
+        <button onclick="checkResult15()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            Деструктуризация 209(1) В следующем коде части массива записываются в соответствующие переменные:
+            
+            function func() {
+            return ['John', 'Smit', 'development', 'programmer', 2000];
+            }
+            
+            let arr = func();
+            
+            let name = arr[0];
+            let surname = arr[1];
+            let department = arr[2];
+            let position = arr[3];
+            let salary = arr[4];
+            Переделайте этот код через деструктуризацию согласно изученной теории.
+        </p>
+        <button onclick="checkResult17()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            210 (1) В следующем коде части массива записываются в соответствующие переменные:
+            
+            let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+            
+            let department = arr[2];
+            let position = arr[3];
+            Переделайте этот код через деструктуризацию согласно изученной теории.
+        </p>
+        <button onclick="checkResult16()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            212 (1) В следующем коде части массива записываются в соответствующие переменные:
+            
+            let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+            
+            let name = arr[0];
+            let surname = arr[1];
+            
+            let info = arr.slice(2); // все элементы со второго до конца массива
+            Переделайте этот код через деструктуризацию согласно изученной теории.
+        </p>
+        <button onclick="checkResult17()">Проверить</button>
+    </li>
+    <li>
+        <p>
+        213 (1) В следующем коде части массива записываются в соответствующие переменные:
+        
+        let arr = ['John', 'Smit', 'development', 'programmer'];
+        
+        let name = arr[0];
+        let surname = arr[1];
+        let department = arr[2];
+        
+        let position;
+        if (arr[3] !== undefined) {
+        position = arr[3];
+        } else {
+        position = 'trainee';
+        }
+        Переделайте этот код через деструктуризацию согласно изученной теории.
+        </p>
+        <button onclick="checkResult18()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            function func() {
+            return (new Date).getDate();
+            }
+            let [year, month, day = func()] = arr;
+            214 (1) Модифицируйте полученный выше код так, чтобы при отсутствии 
+            в массиве значения для месяца по умолчанию брался текущий
+            месяц, а при отсутствии значения для года - соответственно текущий год.
+        </p>
+        <button onclick="checkResult19()">Проверить</button>
+    </li>
+    <li>
+        <p>
+            
+            216 (1) В следующем коде части объекта записываются в соответствующие переменные:
+            
+            let options = {
+            color: 'red',
+            width: 400,
+            height: 500,
+            };
+            
+            let color = options.color;
+            let width = options.width;
+            let height = options.height;
+            Переделайте этот код через деструктуризацию согласно изученной теории.
+        </p>
+        <button onclick="checkResult20()">Проверить</button>
+    </li>
+    <li>
+        <p>
     
+            217 (1) В следующем коде части объекта записываются в соответствующие переменные:
+            
+            let options = {
+            color: 'red',
+            width: 400,
+            height: 500,
+            };
+            
+            let c = options.color;
+            let w = options.width;
+            let h = options.height;
+            Переделайте этот код через деструктуризацию согласно изученной теории.
+        </p>
+        <button onclick="checkResult21()">Проверить</button>
     </li>
     </ol>
 
